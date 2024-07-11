@@ -1,0 +1,86 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar a {
+  color: green;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+/* Body and container styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin-top: 70px; /* Adjusted to provide space for the fixed navbar */
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+/* Decrypted data styling */
+.decrypted-data {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Logo styling */
+.logo {
+  max-width: 100px; /* Smaller logo size */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}

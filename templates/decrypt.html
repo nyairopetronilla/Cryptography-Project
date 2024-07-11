@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcel Decryption</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="/decrypt">Decrypt Parcel</a>
+    </nav>
+  </header>
+  <div class="container">
+    <img src="static/logo.png" alt="Company Logo" class="logo">
+    <h1>Parcel Decryption</h1>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form action="/decrypt" method="POST">
+      <div class="form-group">
+        <label for="key">Decryption Key</label>
+        <input type="text" id="key" name="key" placeholder="Enter decryption key" required>
+      </div>
+      <input type="submit" value="Decrypt">
+    </form>
+  </div>
+</body>
+</html>
