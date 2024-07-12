@@ -1,6 +1,6 @@
 # Parcel Collection Service
 
-This is a simple parcel collection service web application built using Flask and Python. The application encrypts parcel details using AES encryption and sends the encrypted details via SMS using Africa's Talking API.
+This is a simple parcel collection service web application built using Flask and Python. The application encrypts parcel details using DES3 encryption and sends the encrypted details via SMS using Africa's Talking API.
 
 ## Project Structure
 
