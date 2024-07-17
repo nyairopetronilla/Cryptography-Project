@@ -39,7 +39,7 @@ def send_sms(phone_number, message):
     url = "https://api.sandbox.africastalking.com/version1/messaging"
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
-        "apiKey": "atsk_4d7836c7a1db68b8137f25b21dddc253e4a57501be5560a5774918ec8a42fc2e26e5b183"  # Replace with your actual sandbox API key
+        "apiKey": " "  # Replace with your actual sandbox API key
     }
     payload = {
         "username": "sandbox",  # Username for sandbox environment
